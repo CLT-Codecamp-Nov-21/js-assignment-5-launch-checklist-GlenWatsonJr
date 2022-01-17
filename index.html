@@ -1,6 +1,9 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
     <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+
         <title>Launch Checklist</title>
         <link rel = "stylesheet" type = "text/css" href = "styles.css" />
         <script src = "scriptHelper.js"></script>
@@ -15,16 +18,16 @@
         <div id="launchForm">
             <form data-testid="testForm">
                 <div class="formField">
-                    <label>Pilot Name <input type="text" name="pilotName" id="pilotName"/></label>
+                    <label>Pilot Name <input id = "pilot" type="text" name="pilotName"/></label>
                 </div>
                 <div class="formField">
-                    <label>Co-pilot Name <input type="text" name="copilotName"/></label>
+                    <label>Co-pilot Name <input id = "copilot" type="text" name="copilotName"/></label>
                 </div>
                 <div class="formField">
-                    <label>Fuel Level (L) <input type="text" name="fuelLevel"/></label> 
+                    <label>Fuel Level (L) <input id = "fuel" type="text" name="fuelLevel"/></label> 
                 </div>
                 <div class="formField">
-                    <label>Cargo Mass (kg) <input type="text" name="cargoMass"/></label>
+                    <label>Cargo Mass (kg) <input id = "cargo" type="text" name="cargoMass"/></label>
                 </div>
                 <button id="formSubmit">Submit</button>
             </form>
@@ -32,7 +35,7 @@
         <div id="launchStatusCheck">
             <h2 id="launchStatus" data-testid="launchStatus">Awaiting Information Before Launch</h2>
             <div  id="faultyItems" data-testid="faultyItems">
-                <ol>
+                <ol id="list">
                     <li id="pilotStatus" data-testid="pilotStatus">Pilot Ready</li>
                     <li id="copilotStatus" data-testid="copilotStatus">Co-pilot Ready</li>
                     <li id="fuelStatus" data-testid="fuelStatus">Fuel level high enough for launch</li>
