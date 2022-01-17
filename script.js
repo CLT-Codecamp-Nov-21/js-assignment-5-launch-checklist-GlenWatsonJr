@@ -4,9 +4,8 @@
 
 window.addEventListener("load", function() {
     let form = document.querySelector("form");
-    let list = document.getElementById("list");
-
-   
+    let list = document.getElementById("faultyItems");
+    list.style.visibility ="hidden";  
 
     
   
@@ -18,7 +17,7 @@ window.addEventListener("load", function() {
     
    })
        // Below this comment call the appropriate helper functions to pick a planet fom the list of planets and add that information to your destination.
-    list.style.visibility ="hidden";
+   
 
    form.addEventListener("submit", function(event) {
     event.preventDefault();
