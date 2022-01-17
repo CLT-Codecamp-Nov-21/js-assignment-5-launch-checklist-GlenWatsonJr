@@ -36,7 +36,7 @@ function validateInput(testInput) {
         return "Empty";
     }else if (isNaN(testInput)){
         return "Not a Number";
-    }else if (Number.isInteger(testInput)){
+    }else (Number.isInteger(testInput)){
         return "Is a Number";
     }
    
